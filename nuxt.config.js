@@ -26,6 +26,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/i18n',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -43,6 +44,21 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          { code: 'en', iso: 'en-US', file: 'en.js' },
+          { code: 'ru', iso: 'ru-RU', file: 'ru.js' },
+          { code: 'uz', iso: 'uz-UZ', file: 'uz.js' },
+        ],
+        defaultLocale: 'uz',
+        strategy: 'prefix_except_default',
+        seo: false,
+        lazy: true,
+        langDir: 'i18n/',
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
