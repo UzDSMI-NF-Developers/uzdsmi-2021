@@ -1,0 +1,52 @@
+h1 {
+  @apply text-4xl mb-3;
+}
+
+h2 {
+  @apply text-3xl mb-2;
+}
+
+h3 {
+  @apply text-2xl mb-1;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+p {
+  @apply text-lg mb-2;
+}
+
+button {
+  @apply uppercase font-bold tracking-wider bg-blue-500 text-white px-4 py-2 rounded;
+}
+
+button:hover {
+  @apply bg-blue-700;
+}
+
+a {
+  @apply text-blue-500;
+}
+
+a:hover {
+  @apply text-blue-700 underline;
+}
+
+ul,
+ol {
+  @apply list-inside;
+}
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+blockquote {
+  @apply p-2 mx-6 bg-gray-100 mb-4 border-l-4 border-gray-400 italic;
+}
