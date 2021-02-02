@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full text-gray-900 bg-white">
+  <div class="w-full dark:text-gray-200 bg-white dark:bg-gray-800">
     <div class="flex flex-col px-4 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
       <div class="p-4 flex flex-row items-center justify-between">
         <Logo />
