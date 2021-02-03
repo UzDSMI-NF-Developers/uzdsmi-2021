@@ -19,7 +19,7 @@ h4 {
 }
 
 p {
-  @apply text-lg mb-2;
+  @apply text-base leading-6 mb-2;
 }
 
 button {
