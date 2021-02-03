@@ -13,9 +13,12 @@
     "@nuxtjs/axios": "^5.12.5",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
-    "nuxt-i18n": "^6.19.0"
+    "nuxt-i18n": "^6.19.0",
+    "swiper": "5.4.5",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
+    "@nuxtjs/date-fns": "^1.4.3",
     "@nuxtjs/tailwindcss": "^3.4.2",
     "autoprefixer": "^9",
     "postcss": "^7",
