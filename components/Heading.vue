@@ -1,6 +1,6 @@
 <template>
   <div class="heading">
-    <h3>{{ title }}</h3>
+    <h3 v-html="title" class="font-bold"></h3>
     <div>
       <slot name="link"></slot>
     </div>
