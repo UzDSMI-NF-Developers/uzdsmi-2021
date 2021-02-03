@@ -11,13 +11,13 @@
       <!-- card -->
       <div v-for="post in posts" :key="post.id" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <figure class="h-60">
-          <NuxtLink :to="'/news'">
+          <NuxtLink :to="'/news/' + post.id">
             <img :src="post._embedded['wp:featuredmedia']['0'].source_url" alt="" class="h-full mx-auto" />
           </NuxtLink>
         </figure>
         <div class="p-4 flex-grow">
           <h4 class="leading-5 mb-6 text-lg">
-            <NuxtLink :to="'/news'" v-html="post.title.rendered"></NuxtLink>
+            <NuxtLink :to="'/news/' + post.id" v-html="post.title.rendered"></NuxtLink>
           </h4>
           <div v-html="post.excerpt.rendered"></div>
         </div>
@@ -33,7 +33,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
             </svg>
-            {{ postViewsCounter(post) }}
+            views
           </span>
         </div>
       </div>
@@ -49,16 +49,5 @@ export default {
   components: {
     Heading
   },
-  methods: {
-    postViewsCounter(post) {
-      let { id } = post
-      let data = 0
-      this.$axios.get(`https://admin.uzdsmi-nf.uz/wp-json/base/views/${id}`).then(response => {
-        data += response.data
-        return data
-      })
-      return data
-    }
-  }
 }
 </script>
