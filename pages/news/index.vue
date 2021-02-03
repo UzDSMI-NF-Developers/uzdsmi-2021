@@ -1,15 +1,9 @@
 <template>
-  <div class="my-10">
-    <Heading title="So'ngi yangiliklar">
-      <template #link>
-        <NuxtLink :to="localePath('/news')">
-          Barcha yangiliklar
-        </NuxtLink>
-      </template>
-    </Heading>
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-8 mb-6">
+  <Container>
+    <Heading title="Yangiliklar"></Heading>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-6 mb-4">
       <!-- card -->
-      <div v-for="post in posts" :key="post.id" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
+      <div v-for="post in news" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <figure class="h-60">
           <NuxtLink :to="'/news'">
             <img :src="post._embedded['wp:featuredmedia']['0'].source_url" alt="" class="h-full mx-auto" />
@@ -33,32 +27,29 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
             </svg>
-            {{ postViewsCounter(post) }}
+            views
           </span>
         </div>
       </div>
     </div>
-  </div>
+  </Container>
 </template>
 
 <script>
+import Container from '@/components/Container'
 import Heading from '@/components/Heading'
 
 export default {
-  props: ['posts'],
-  components: {
-    Heading
-  },
-  methods: {
-    postViewsCounter(post) {
-      let { id } = post
-      let data = 0
-      this.$axios.get(`https://admin.uzdsmi-nf.uz/wp-json/base/views/${id}`).then(response => {
-        data += response.data
-        return data
-      })
-      return data
+  async asyncData({ $axios }) {
+    const news = await $axios.$get(`https://admin.uzdsmi-nf.uz/wp-json/wp/v2/posts?categories=2&per_page=12&_embed`)
+
+    return {
+      news
     }
+  },
+  components: {
+    Container,
+    Heading
   }
 }
 </script>

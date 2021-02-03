@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my-10">
     <Heading title="Konferensiyalar">
       <template #link>
         <NuxtLink :to="localePath('/conferences')">
