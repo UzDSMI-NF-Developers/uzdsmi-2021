@@ -5,6 +5,15 @@ module.exports = {
   presets: [],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: '#000000',
+          }
+        }
+      })
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -853,5 +862,8 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ],
 }
