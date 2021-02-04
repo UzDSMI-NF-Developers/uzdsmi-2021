@@ -120,7 +120,7 @@ export default {
   news: {
     latest: 'Oxirgi yangiliklar',
     description: "O'zbekiston davlat san'at va madaniyat institutining Nukus filialidagi so'nggi yangiliklar va dolzarb yangiliklar",
-    all: "Barcha yangiliklarni ko'rish",
+    all: "Barcha yangiliklar",
   },
   announcements: {
     latest: "Oxirgi e'lonlar",

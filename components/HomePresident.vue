@@ -1,6 +1,6 @@
 <template>
   <div class="my-10">
-    <Heading title="O'zbekiston Respublikasi Prezidenti Shavkat Mirziyoyevning ijtimoiy tarmoqlardagi rasmiy sahifalari "></Heading>
+    <Heading :title="$t('president_title')"></Heading>
   </div>
 </template>
 

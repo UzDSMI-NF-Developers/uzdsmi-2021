@@ -1,9 +1,9 @@
 <template>
   <div class="my-10">
-    <Heading title="Konferensiyalar">
+    <Heading :title="$t('conferences.latest')">
       <template #link>
         <NuxtLink :to="localePath('/conferences')">
-          Barcha konferensiyalar
+          {{ $t('conferences.all') }}
         </NuxtLink>
       </template>
     </Heading>

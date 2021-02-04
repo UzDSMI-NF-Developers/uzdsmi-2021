@@ -1,6 +1,6 @@
 <template>
   <div class="my-10">
-    <Heading title="Foydali manbalar"></Heading>
+    <Heading :title="$t('useful_resources')"></Heading>
     <client-only>
       <div class="mt-8 mb-6">
         <swiper class="useful-resources-slider" :options="usefulResourcesSliderOptions">

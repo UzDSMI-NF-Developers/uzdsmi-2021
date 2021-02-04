@@ -1,9 +1,9 @@
 <template>
   <div class="my-10">
-    <Heading title="So'ngi yangiliklar">
+    <Heading :title="$t('news.latest')">
       <template #link>
         <NuxtLink :to="localePath('/news')">
-          Barcha yangiliklar
+          {{ $t('news.all') }}
         </NuxtLink>
       </template>
     </Heading>
@@ -11,13 +11,13 @@
       <!-- card -->
       <div v-for="post in posts" :key="post.id" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <figure class="h-60">
-          <NuxtLink :to="'/news/' + post.id">
+          <NuxtLink :to="localePath('/news/' + post.id)">
             <img :src="post._embedded['wp:featuredmedia']['0'].source_url" alt="" class="h-full mx-auto" />
           </NuxtLink>
         </figure>
         <div class="p-4 flex-grow">
           <h4 class="leading-5 mb-6 text-lg">
-            <NuxtLink :to="'/news/' + post.id" v-html="post.title.rendered"></NuxtLink>
+            <NuxtLink :to="localePath('/news/' + post.id)" v-html="post.title.rendered"></NuxtLink>
           </h4>
           <div v-html="post.excerpt.rendered"></div>
         </div>

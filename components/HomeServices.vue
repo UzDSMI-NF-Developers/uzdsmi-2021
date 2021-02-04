@@ -1,6 +1,6 @@
 <template>
   <div class="my-10">
-    <Heading title="Interaktiv xizmatlar"></Heading>
+    <Heading :title="$t('interactive_services')"></Heading>
   </div>
 </template>
 

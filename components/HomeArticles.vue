@@ -1,9 +1,9 @@
 <template>
   <div class="my-10">
-    <Heading title="Maqolalar">
+    <Heading :title="$t('articles.latest')">
       <template #link>
         <NuxtLink :to="localePath('/articles')">
-          Barcha maqolalar
+          {{ $t('articles.all') }}
         </NuxtLink>
       </template>
     </Heading>
@@ -25,7 +25,7 @@
                   class="title-font font-medium text-lg"
                 ></h2>
                 <p class="text-gray-600 text-sm font-semibold mb-3">
-                  {{ $dateFns.format(post.date, 'eeee, d MMMM, y'), { locale } }}
+                  {{ $dateFns.format(post.date, 'eeee, d MMMM, y', { locale }) }}
                 </p>
               </div>
             </div>
