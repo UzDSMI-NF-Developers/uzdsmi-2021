@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
   a {
-    @apply block px-4 py-2 mt-2 font-semibold text-black rounded;
+    @apply block px-4 py-2 mt-2 font-semibold text-sm text-black rounded;
 
     @screen md {
       @apply mt-0;

@@ -64,7 +64,7 @@ export default {
 <style scoped>
   .drop-btn {
     @apply flex flex-row items-center w-full px-4 py-2 mt-2;
-    @apply font-semibold text-left text-black bg-transparent rounded normal-case;
+    @apply font-semibold text-sm text-left text-black bg-transparent rounded normal-case;
 
     @screen md {
       @apply mt-0;
