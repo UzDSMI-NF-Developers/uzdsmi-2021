@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4 px-2 flex flex-col md:flex-row items-center justify-between bg-gray-800">
+  <div class="py-4 px-2 flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-gray-700 to-gray-900">
     <div class="py-1 md:py-0">
       <ul class="flex items-center">
         <li>
