@@ -14,7 +14,7 @@
             <div class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
               <div class="p-4 flex-grow">
                 <h4 class="leading-5 mb-6 text-lg">
-                  <NuxtLink :to="'/news'" v-html="post.title.rendered"></NuxtLink>
+                  <NuxtLink :to="'/conferences/' + post.id" v-html="post.title.rendered"></NuxtLink>
                 </h4>
                 <div v-html="post.excerpt.rendered"></div>
               </div>
