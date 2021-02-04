@@ -3,7 +3,7 @@
     :to="localePath('/')"
     class="flex font-medium items-center md:justify-start justify-center"
   >
-    <img src="/logo.png" alt="Uzdsmi-NF.uz Logo" width="150px" />
+    <img src="/logo.png" alt="Uzdsmi-NF.uz Logo" width="120px" />
     <span v-if="withTitle" class="ml-3 text-xl">
       {{ $t('site_title') }}
     </span>
