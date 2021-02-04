@@ -5,6 +5,9 @@
     <HomeAnnouncements :posts="announcements" />
     <HomeArticles :posts="articles" />
     <HomeConferences :posts="conferences" />
+    <HomeServices />
+    <HomePresident />
+    <HomeResources />
   </Container>
 </template>
 
@@ -15,6 +18,9 @@ import HomeAnnouncements from '@/components/HomeAnnouncements'
 import HomeArticles from '@/components/HomeArticles'
 import HomeConferences from '@/components/HomeConferences'
 import HomeSlider from '@/components/HomeSlider'
+import HomeServices from '@/components/HomeServices'
+import HomePresident from '@/components/HomePresident'
+import HomeResources from '@/components/HomeResources'
 
 const POSTS_URL = `https://admin.uzdsmi-nf.uz/wp-json/wp/v2/posts`
 
@@ -38,7 +44,10 @@ export default {
     HomeAnnouncements,
     HomeArticles,
     HomeConferences,
-    HomeSlider
+    HomeSlider,
+    HomeServices,
+    HomePresident,
+    HomeResources
   }
 }
 </script>
