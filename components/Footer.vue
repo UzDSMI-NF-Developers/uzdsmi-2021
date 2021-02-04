@@ -16,32 +16,32 @@
           </h3>
           <ul class="list-none mb-10 space-y-3">
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 {{ $t('nav.branch.title') }}
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 {{ $t('nav.activity.title') }}
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 {{ $t('nav.applicants.title') }}
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 {{ $t('nav.students.title') }}
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 {{ $t('nav.interactive_services.title') }}
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 {{ $t('nav.normative_legal_documents.title') }}
               </NuxtLink>
             </li>
@@ -53,22 +53,22 @@
           </h3>
           <ul class="list-none mb-10 space-y-3">
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 First Link
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 Second Link
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 Third Link
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink :to="localePath('/')" class="text-gray-800 hover:text-black">
+              <NuxtLink :to="localePath('/')" class="text-gray-800 dark:text-gray-200 hover:text-black">
                 Fourth Link
               </NuxtLink>
             </li>
@@ -102,7 +102,7 @@
         </div>
       </div>
     </Container>
-    <div class="bg-gray-200">
+    <div class="bg-gray-200 dark:bg-gray-800">
       <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
         <Logo withTitle />
         <p class="text-md sm:ml-6 sm:mt-0 mt-4">© {{ new Date().getFullYear() }}</p>
