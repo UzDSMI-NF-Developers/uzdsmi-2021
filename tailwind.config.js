@@ -198,8 +198,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
-      display: ['Roboto'],
-      body: ['Inter']
+      display: ['Lora'],
+      body: ['Montserrat']
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
