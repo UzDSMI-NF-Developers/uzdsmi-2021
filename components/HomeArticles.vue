@@ -24,8 +24,8 @@
                   v-html="post.title.rendered"
                   class="title-font font-medium text-lg"
                 ></h2>
-                <p class="text-gray-700 mb-3">
-                  {{ $dateFns.format(post.date, 'eeee, d MMMM, y') }}
+                <p class="text-gray-600 text-sm font-semibold mb-3">
+                  {{ $dateFns.format(post.date, 'eeee, d MMMM, y'), { locale } }}
                 </p>
               </div>
             </div>
@@ -70,6 +70,13 @@ export default {
           },
         }
       }
+    }
+  },
+  computed: {
+    locale() {
+      const currentLocale = this.$i18n.locale
+
+      return currentLocale === 'en' ? 'en-US' : currentLocale
     }
   }
 }

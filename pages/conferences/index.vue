@@ -1,23 +1,12 @@
 <template>
-  <div class="my-10">
-    <Heading title="So'ngi yangiliklar">
-      <template #link>
-        <NuxtLink :to="localePath('/news')">
-          Barcha yangiliklar
-        </NuxtLink>
-      </template>
-    </Heading>
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-8 mb-6">
+  <Container>
+    <Heading title="Konferensiyalar"></Heading>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-6 mb-4">
       <!-- card -->
-      <div v-for="post in posts" :key="post.id" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
-        <figure class="h-60">
-          <NuxtLink :to="'/news/' + post.id">
-            <img :src="post._embedded['wp:featuredmedia']['0'].source_url" alt="" class="h-full mx-auto" />
-          </NuxtLink>
-        </figure>
+      <div v-for="post in conferences" :key="post.id" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <div class="p-4 flex-grow">
           <h4 class="leading-5 mb-6 text-lg">
-            <NuxtLink :to="'/news/' + post.id" v-html="post.title.rendered"></NuxtLink>
+            <NuxtLink :to="'/conferences/' + post.id" v-html="post.title.rendered"></NuxtLink>
           </h4>
           <div v-html="post.excerpt.rendered"></div>
         </div>
@@ -26,7 +15,7 @@
             <svg class="mr-1 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            {{ $dateFns.format(post.date, 'eeee, d MMMM, y', { locale }) }}
+            {{ $dateFns.format(post.date, 'eeee, d MMMM, y', { locale: locale === 'en' ? 'en-US' : locale }) }}
           </span>
           <span class="text-gray-600 text-sm font-semibold flex items-center">
             <svg class="mr-1 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,23 +27,26 @@
         </div>
       </div>
     </div>
-  </div>
+  </Container>
 </template>
 
 <script>
+import Container from '@/components/Container'
 import Heading from '@/components/Heading'
 
 export default {
-  props: ['posts'],
-  components: {
-    Heading
-  },
-  computed: {
-    locale() {
-      const currentLocale = this.$i18n.locale
+  async asyncData({ $axios, app }) {
+    const { locale } = app.i18n
+    const conferences = await $axios.$get(`https://admin.uzdsmi-nf.uz/wp-json/wp/v2/posts?categories=5&_embed`)
 
-      return currentLocale === 'en' ? 'en-US' : currentLocale
+    return {
+      conferences,
+      locale
     }
+  },
+  components: {
+    Container,
+    Heading
   }
 }
 </script>

@@ -23,7 +23,7 @@
                   <svg class="mr-1 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  {{ $dateFns.format(post.date, 'eeee, d MMMM, y') }}
+                  {{ $dateFns.format(post.date, 'eeee, d MMMM, y', { locale }) }}
                 </span>
                 <span class="text-gray-600 text-sm font-semibold flex items-center">
                   <svg class="mr-1 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -75,6 +75,13 @@ export default {
           },
         }
       }
+    }
+  },
+  computed: {
+    locale() {
+      const currentLocale = this.$i18n.locale
+
+      return currentLocale === 'en' ? 'en-US' : currentLocale
     }
   }
 }

@@ -23,8 +23,6 @@ export default {
     const articles = await $axios.$get(`${POSTS_URL}?categories=4&_embed&per_page=8`)
     const conferences = await $axios.$get(`${POSTS_URL}?categories=5&_embed&per_page=3`)
 
-    // const news = await $axios.$get(`https://admin.uzdsmi-nf.uz/wp-json/base/views/1100`)
-
     return {
       news,
       announcements,
