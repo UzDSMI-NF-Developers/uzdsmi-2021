@@ -44,6 +44,7 @@ export default {
   components: {
     Container,
     Heading
-  }
+  },
+  layout: 'page',
 }
 </script>

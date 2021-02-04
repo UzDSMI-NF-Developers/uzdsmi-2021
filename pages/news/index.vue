@@ -1,7 +1,7 @@
 <template>
   <Container>
     <Heading title="Yangiliklar"></Heading>
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-6 mb-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6 mb-4">
       <!-- card -->
       <div v-for="post in news" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <figure class="h-60">
@@ -52,6 +52,7 @@ export default {
   components: {
     Container,
     Heading
-  }
+  },
+  layout: 'page',
 }
 </script>
