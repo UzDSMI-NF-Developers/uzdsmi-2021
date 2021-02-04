@@ -1,17 +1,17 @@
 <template>
   <Container>
-    <Heading title="Yangiliklar"></Heading>
+    <Heading :title="$t('news.all')"></Heading>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6 mb-4">
       <!-- card -->
       <div v-for="post in news" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <figure class="h-60">
-          <NuxtLink :to="'/news/' + post.id">
+          <NuxtLink :to="localePath('/news/' + post.id)">
             <img :src="post._embedded['wp:featuredmedia']['0'].source_url" alt="" class="h-full mx-auto" />
           </NuxtLink>
         </figure>
         <div class="p-4 flex-grow">
           <h4 class="leading-5 mb-6 text-lg">
-            <NuxtLink :to="'/news/' + post.id" v-html="post.title.rendered"></NuxtLink>
+            <NuxtLink :to="localePath('/news/' + post.id)" v-html="post.title.rendered"></NuxtLink>
           </h4>
           <div v-html="post.excerpt.rendered"></div>
         </div>
