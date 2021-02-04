@@ -8,9 +8,11 @@
             v-for="slide in slides"
             :key="slide.id"
           >
-            <a :href="slide.href" rel="nofollow noopener">
-              <img :src="slide.img" :alt="slide.alt" />
-            </a>
+            <div class="bg-white dark:bg-gray-600 p-4 shadow border border-width-2 border-gray-200 rounded">
+              <a :href="slide.href" target="_blank" rel="nofollow noopener" class="block h-16">
+                <img :src="slide.img" :alt="slide.alt" class="h-full mx-auto" />
+              </a>
+            </div>
           </swiper-slide>
           <div slot="pagination" class="swiper-pagination"></div>
         </swiper>
@@ -32,7 +34,7 @@ export default {
         slidesPerView: 3,
         spaceBetween: 30,
         autoplay: {
-          delay: 2000,
+          delay: 4000,
         },
         pagination: {
           el: '.swiper-pagination',
@@ -90,8 +92,8 @@ export default {
 }
 </script>
 
-<style>
-.useful-resources-slider {
-  height: 120px;
+<style scoped>
+.swiper-container {
+  height: 150px;
 }
 </style>
