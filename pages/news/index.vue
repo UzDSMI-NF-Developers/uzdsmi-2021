@@ -1,9 +1,9 @@
 <template>
   <Container>
     <Heading :title="$t('news.all')"></Heading>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6 mb-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6 mb-4">
       <!-- card -->
-      <div v-for="post in news" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
+      <div v-for="post in news" class="bg-white dark:bg-gray-600 shadow hover:shadow-lg transition border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <figure class="h-60">
           <NuxtLink :to="localePath('/news/' + post.id)">
             <img :src="post._embedded['wp:featuredmedia']['0'].source_url" alt="" class="h-full mx-auto" />

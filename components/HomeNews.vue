@@ -9,7 +9,7 @@
     </Heading>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-8 mb-6">
       <!-- card -->
-      <div v-for="post in posts" :key="post.id" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
+      <div v-for="post in posts" :key="post.id" class="bg-white dark:bg-gray-600 shadow hover:shadow-lg transition hover:shadow-lg transition border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <figure class="h-60">
           <NuxtLink :to="localePath('/news/' + post.id)">
             <img :src="post._embedded['wp:featuredmedia']['0'].source_url" alt="" class="h-full mx-auto" />

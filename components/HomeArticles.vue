@@ -7,7 +7,7 @@
         </NuxtLink>
       </template>
     </Heading>
-    <div class="mt-8 mb-6 bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded p-4">
+    <div class="mt-8 mb-6 bg-white dark:bg-gray-600 shadow hover:shadow-lg transition border border-width-2 border-gray-200 rounded p-4">
       <swiper :options="sliderOptions">
         <swiper-slide v-for="post in posts" :key="post.id">
           <NuxtLink :to="localePath('/articles/' + post.id)">

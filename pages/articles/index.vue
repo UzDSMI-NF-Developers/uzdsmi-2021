@@ -6,7 +6,7 @@
       <div
         v-for="post in articles"
         :key="post.id"
-        class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded px-4 py-2 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mb-10"
+        class="bg-white dark:bg-gray-600 shadow hover:shadow-lg transition border border-width-2 border-gray-200 rounded px-4 py-2 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mb-10"
       >
         <img
           :src="post._embedded['wp:featuredmedia']['0'].source_url"

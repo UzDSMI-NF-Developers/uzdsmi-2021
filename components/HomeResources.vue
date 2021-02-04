@@ -8,7 +8,7 @@
             v-for="slide in slides"
             :key="slide.id"
           >
-            <div class="bg-white dark:bg-gray-600 p-4 shadow border border-width-2 border-gray-200 rounded">
+            <div class="bg-white dark:bg-gray-600 p-4 shadow hover:shadow-lg transition border border-width-2 border-gray-200 rounded">
               <a :href="slide.href" target="_blank" rel="nofollow noopener" class="block h-16">
                 <img :src="slide.img" :alt="slide.alt" class="h-full mx-auto" />
               </a>

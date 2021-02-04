@@ -3,7 +3,7 @@
     <Heading :title="$t('conferences.all')"></Heading>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6 mb-4">
       <!-- card -->
-      <div v-for="post in conferences" :key="post.id" class="bg-white dark:bg-gray-600 shadow border border-width-2 border-gray-200 rounded flex flex-col justify-between">
+      <div v-for="post in conferences" :key="post.id" class="bg-white dark:bg-gray-600 shadow hover:shadow-lg transition border border-width-2 border-gray-200 rounded flex flex-col justify-between">
         <div class="p-4 flex-grow">
           <h4 class="leading-5 mb-6 text-lg">
             <NuxtLink :to="localePath('/conferences/' + post.id)" v-html="post.title.rendered"></NuxtLink>
