@@ -111,7 +111,10 @@ export default {
       this.pagination.nextPage = this.postsData.page < this.pagination.totalPages ? this.postsData.page + 1 : '';
     },
     scrollToTop() {
-      window.scrollTo(0, 0)
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
     },
     jumpTo(page) {
       if (page > this.pagination.totalPages || page <= 0) {
