@@ -13,7 +13,7 @@
           <swiper-slide v-for="post in posts" :key="post.id">
             <div class="bg-white dark:bg-gray-600 shadow hover:shadow-lg transition border border-width-2 border-gray-200 rounded flex flex-col justify-between">
               <div class="p-4 flex-grow">
-                <h4 class="leading-5 mb-6 text-lg">
+                <h4 class="font-semibold leading-5 mb-6 text-lg">
                   <NuxtLink :to="localePath('/announcements/' + post.id)" v-html="post.title.rendered"></NuxtLink>
                 </h4>
                 <div v-html="post.excerpt.rendered"></div>

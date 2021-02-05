@@ -13,7 +13,7 @@
           </NuxtLink>
         </figure>
         <div class="p-4 flex-grow">
-          <h4 class="leading-5 mb-6 text-lg">
+          <h4 class="font-semibold leading-5 mb-6 text-lg">
             <NuxtLink :to="localePath('/news/' + post.id)" v-html="post.title.rendered"></NuxtLink>
           </h4>
           <div v-html="post.excerpt.rendered"></div>
