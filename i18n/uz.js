@@ -123,7 +123,7 @@ export default {
     all: "Barcha yangiliklar",
   },
   announcements: {
-    latest: "Oxirgi e'lonlar",
+    latest: "E'lonlar",
     description: "O'zbekiston davlat san'at va madaniyat institutining Nukus filialidagi so'nggi e'lonlar",
     all: "Barcha e'lonlar",
   },

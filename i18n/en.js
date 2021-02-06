@@ -123,7 +123,7 @@ export default {
     all: 'View all news',
   },
   announcements: {
-    latest: 'Latest announcements',
+    latest: 'Announcements',
     description: 'Latest announcements in Nukus branch of the State Institute of Art and Culture of Uzbekistan',
     all: 'All announcements',
   },
