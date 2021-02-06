@@ -4,17 +4,31 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'uzdsmi-2021',
-    htmlAttrs: {
-      lang: 'en'
-    },
+    title: "O'zbekiston davlat san'at va madaniyat instituti Nukus filiali | uzdsmi-nf.uz",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: "O'zbekiston davlat san'at va madaniyat instituti Nukus filialining rasmiy veb-sayti" },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Uzdsmi-NF' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://uzdsmi-nf.uz/logo.png',
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: 'https://uzdsmi-nf.uz/logo.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'UzdsmiNF',
+      },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', href: '/logo.png' },
       // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap' }
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap' }
     ]
