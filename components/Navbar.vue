@@ -292,7 +292,7 @@
         <!-- Normative-Legal documents END -->
 
         <NavLink :to="localePath('/news')">{{ $t('nav.news') }}</NavLink>
-        <NavLink :to="localePath('/page/786124')">{{ $t('nav.contacts') }}</NavLink>
+        <!-- <NavLink :to="localePath('/page/786124')">{{ $t('nav.contacts') }}</NavLink> -->
       </nav>
     </div>
   </div>

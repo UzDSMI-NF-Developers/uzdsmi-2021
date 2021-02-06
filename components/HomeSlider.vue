@@ -20,7 +20,7 @@
             </a>
           </div>
         </swiper-slide>
-        <swiper-slide>
+        <!-- <swiper-slide>
           <div
             class="bg-cover bg-center h-auto text-white py-20 px-12 md:py-40 md:px-16 object-fill"
             style="background-image: url(/slider/contacts.jpg)"
@@ -33,7 +33,7 @@
               {{ $t('links.read_more') }}
             </NuxtLink>
           </div>
-        </swiper-slide>
+        </swiper-slide> -->
         <swiper-slide>
           <div
             class="bg-cover bg-center h-auto text-white py-20 px-12 md:py-40 md:px-16 object-fill"
@@ -43,7 +43,7 @@
               Moodle - Elektron ta'lim sistemasi
             </h3>
             <a
-              href="https://uzdsminf.dist.edu.uz/"
+              href="http://uzdsminf.edu.uz"
               class="bg-blue-700 text-white no-underline px-4 py-2 font-semibold rounded hover:bg-blue-500 hover:text-white hover:no-underline"
               target="_blank"
               rel="nofollow noopener"
