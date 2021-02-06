@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative inline-block">
     <button
       class="drop-btn"
       @click="toggleDropdown"

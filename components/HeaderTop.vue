@@ -59,7 +59,33 @@
         </div>
       </div>
     </div>
-    <div class="py-1 md:py-0">
+    <div class="flex flex-col items-end">
+      <ul class="flex items-center justify-between mb-4">
+        <li class="group bg-gray-200 py-2 px-4 rounded-l flex items-center">
+          <svg class="group-hover:text-blue-700 w-6 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <NuxtLink :to="localePath('/online-reception')" class="group-hover:text-blue-700 text-black font-semibold text-sm hover:no-underline">
+            Rektor qabulxonasi
+          </NuxtLink>
+        </li>
+        <li class="group bg-gray-200 py-2 px-4 border-r-2 border-l-2 flex items-center">
+          <svg class="group-hover:text-blue-700 w-6 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+          </svg>
+          <NuxtLink :to="localePath('/')" class="group-hover:text-blue-700 text-black font-semibold text-sm hover:no-underline">
+            Elektron kutubxona
+          </NuxtLink>
+        </li>
+        <li class="group bg-gray-200 py-2 px-4 rounded-r flex items-center">
+          <svg class="group-hover:text-blue-700 w-6 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          <NuxtLink :to="localePath('/')" class="group-hover:text-blue-700 text-black font-semibold text-sm hover:no-underline">
+            Online kameralar
+          </NuxtLink>
+        </li>
+      </ul>
       <LangSelect />
     </div>
   </div>
