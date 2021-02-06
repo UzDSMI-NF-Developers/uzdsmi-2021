@@ -71,7 +71,7 @@ export default {
       socialLinks: [
         {
           name: 'Telegram',
-          href: 'https://telegram.org',
+          href: 'https://t.me/uzdsminf_24',
           iconUrl: require('~/assets/svg/IconTelegram.svg'),
         },
         {
