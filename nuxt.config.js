@@ -29,7 +29,6 @@ export default {
   plugins: [
     '@/plugins/i18n',
     { src: '~/plugins/vue-awesome-swiper.js', mode: 'client' },
-    { src: '~/plugins/v-calendar.js', mode: 'client' },
     '@/plugins/global-components.js'
   ],
 
