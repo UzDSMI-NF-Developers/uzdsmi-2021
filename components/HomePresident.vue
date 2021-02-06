@@ -1,6 +1,6 @@
 <template>
   <div class="my-10">
-    <Heading :title="$t('president_title')"></Heading>
+    <Heading :title="$t('president_title')" class="text-center"></Heading>
     <div class="poster">
       <img
         src="/president-media.png"
