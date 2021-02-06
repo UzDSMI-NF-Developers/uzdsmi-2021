@@ -68,7 +68,7 @@
               <NuxtLink
                 :to="
                   localePath(
-                    '/interactive-services/possibility-to-get-an-electronic-copy-of-the-diploma',
+                    '/page/402706',
                   )
                 "
               >
@@ -113,7 +113,7 @@
           </svg>
           <div class="flex-grow">
             <h4 class="text-gray-900 title-font font-medium">
-              <NuxtLink :to="localePath('/announcements/4')">
+              <NuxtLink :to="localePath('/announcements/449')">
                 {{ $t('nav.interactive_services.vacancies') }}
               </NuxtLink>
             </h4>
