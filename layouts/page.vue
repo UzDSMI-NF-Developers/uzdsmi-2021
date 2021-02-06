@@ -1,13 +1,8 @@
 <template>
   <div>
     <Header />
-    <Container class="flex flex-wrap items-start">
-      <div class="content p-4 mb-20 w-full lg:w-9/12">
-        <Nuxt />
-      </div>
-      <div class="p-4 w-full lg:w-3/12 min-h-screen">
-        <Sidebar />
-      </div>
+    <Container class="p-4 mb-20 w-full">
+      <Nuxt />
     </Container>
     <Container>
       <HomeResources />
@@ -20,7 +15,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Container from '@/components/Container'
-import Sidebar from '@/components/Sidebar'
 import HomeResources from '@/components/HomeResources'
 
 export default {
@@ -28,7 +22,6 @@ export default {
     Header,
     Footer,
     Container,
-    Sidebar,
     HomeResources
   }
 }

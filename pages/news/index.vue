@@ -1,7 +1,7 @@
 <template>
   <Container>
     <Heading :title="$t('news.all')"></Heading>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6 mb-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6 mb-4">
       <!-- card -->
       <div v-if="loading">
         <Loading />
@@ -73,7 +73,7 @@ export default {
       news: [],
       loading: true,
       postsData: {
-        per_page: 10,
+        per_page: 9,
         page: 1
       },
       pagination: {
