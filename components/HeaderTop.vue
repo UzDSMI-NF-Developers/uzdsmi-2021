@@ -54,8 +54,8 @@
           </svg>
         </div>
         <div>
-          <p class="text-sm font-semibold mb-0"><a class="text-gray-200 hover:text-gray-400" href="tel:998612242902">998-61-224-29-02</a></p>
-          <p class="text-sm font-semibold mb-0"><a class="text-gray-200 hover:text-gray-400" href="tel:998977889455">998-97-788-94-55</a></p>
+          <p class="text-sm font-semibold mb-0"><a class="text-gray-200 hover:text-gray-400" href="mailto:fart_info@edu.uz">fart_info@edu.uz</a></p>
+          <p class="text-sm font-semibold mb-0"><a class="text-gray-200 hover:text-gray-400" href="mailto:fart-info@exat.uz">fart-info@exat.uz</a></p>
         </div>
       </div>
     </div>
