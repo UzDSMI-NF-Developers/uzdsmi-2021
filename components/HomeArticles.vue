@@ -11,24 +11,12 @@
       <swiper :options="sliderOptions">
         <swiper-slide v-for="post in posts" :key="post.id">
           <NuxtLink :to="localePath('/articles/' + post.id)">
-            <div
-              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mb-10"
-            >
-              <img
-                :src="post._embedded['wp:featuredmedia']['0'].source_url"
-                :alt="post.title.rendered"
-                class="flex-shrink-0 rounded-lg w-48 h-48 object-contain object-center sm:mb-0 mb-4"
-              />
-              <div class="flex-grow sm:pl-8">
-                <h2
-                  v-html="post.title.rendered"
-                  class="font-semibold title-font font-medium text-lg"
-                ></h2>
-                <p class="text-gray-600 dark:text-gray-200 text-sm font-semibold mb-3">
-                  {{ $dateFns.format(post.date, 'eeee, d MMMM, y', { locale }) }}
-                </p>
-              </div>
-            </div>
+            <ArticlesCard
+              :id="post.id"
+              :title="post.title.rendered"
+              :imageUrl="post._embedded['wp:featuredmedia']['0'].source_url"
+              :date="post.date"
+            />
           </NuxtLink>
         </swiper-slide>
         <div slot="pagination" class="swiper-pagination"></div>
@@ -39,11 +27,13 @@
 
 <script>
 import Heading from '@/components/Heading'
+import ArticlesCard from '@/components/ArticlesCard'
 
 export default {
   props: ['posts'],
   components: {
-    Heading
+    Heading,
+    ArticlesCard
   },
   data() {
     return {
