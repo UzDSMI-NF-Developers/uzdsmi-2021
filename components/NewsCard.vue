@@ -48,7 +48,6 @@ export default {
     async getPostViews(id) {
       const postViews = await this.$axios.$get(`https://admin.uzdsmi-nf.uz/wp-json/wp/v2/postviews/${id}`)
       this.pageViews = postViews
-      console.log(this.pageViews)
     }
   },
   mounted() {
