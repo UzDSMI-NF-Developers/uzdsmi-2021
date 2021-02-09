@@ -29,6 +29,9 @@ import Heading from '@/components/Heading'
 
 export default {
   props: ['id', 'title', 'content', 'date'],
+  components: {
+    Heading
+  },
   data() {
     return {
       pageViews: ''
