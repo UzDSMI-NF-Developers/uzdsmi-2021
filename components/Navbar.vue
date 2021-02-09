@@ -36,6 +36,9 @@
             <NavLink :to="localePath('/page/346504')">
               {{ $t('nav.branch.history') }}
             </NavLink>
+            <NavLink :to="localePath('/page/153031')">
+              {{ $t('nav.branch.structure') }}
+            </NavLink>
             <NavLink :to="localePath('/page/523539')">
               {{ $t('nav.branch.administration') }}
             </NavLink>

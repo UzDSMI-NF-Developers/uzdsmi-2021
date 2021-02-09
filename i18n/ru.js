@@ -22,6 +22,7 @@ export default {
       title: 'Филиал',
       charter: 'Устав',
       history: 'История филиала',
+      structure: 'Структура института',
       administration: 'Администрация',
       faculties: {
         title: 'Факультеты',

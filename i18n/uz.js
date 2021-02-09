@@ -22,6 +22,7 @@ export default {
       title: 'Filial',
       charter: 'Filial nizomi',
       history: 'Filial tarixi',
+      structure: 'Institut tuzilmasi',
       administration: 'Rahbariyat',
       faculties: {
         title: 'Fakultet',

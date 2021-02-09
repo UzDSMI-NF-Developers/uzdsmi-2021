@@ -22,6 +22,7 @@ export default {
       title: 'Branch',
       charter: 'Charter',
       history: 'History',
+      structure: 'The structure of the institute',
       administration: 'Administration',
       faculties: {
         title: 'Faculties',
