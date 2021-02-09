@@ -30,7 +30,17 @@ export default {
     link: [
       { rel: 'icon', href: '/logo.png' },
       // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap' }
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap' },
+    ],
+    script: [
+      {
+        src: '/accessibility.min.js',
+        body: true
+      },
+      {
+        src: '/script.js',
+        body: true
+      }
     ]
   },
 

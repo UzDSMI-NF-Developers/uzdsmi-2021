@@ -13,6 +13,7 @@
     "@nuxtjs/axios": "^5.12.5",
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.4.0",
+    "accessibility": "^3.0.13",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.19.0",

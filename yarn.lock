@@ -1955,6 +1955,11 @@ accepts@^1.3.5, accepts@~1.3.5, accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
+accessibility@^3.0.13:
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/accessibility/-/accessibility-3.0.13.tgz#3ecbed97eff1d7795eca55f509879a91be65d4bc"
+  integrity sha512-8nF6xjBCCCEw2x9zzK/sPNA/OGiBDjNDn6KhCKuMblPd/RwXfEe3fEUaMaJp+KuCr64RLTpceuqQ9ozam0aQWg==
+
 acorn-node@^1.6.1:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/acorn-node/-/acorn-node-1.8.2.tgz#114c95d64539e53dede23de8b9d96df7c7ae2af8"
