@@ -33,12 +33,8 @@ import Container from '@/components/Container'
 export default {
   props: ['id', 'title', 'content', 'date'],
   components: {
-<<<<<<< HEAD
     Heading,
     Container
-=======
-    Heading
->>>>>>> a2be2a5bf813db8dd34f432e5f346b811ddf5fda
   },
   data() {
     return {
