@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     async getPostViews(id) {
-      const postViews = await this.$axios.$get(`https://admin.uzdsmi-nf.uz/wp-json/wp/v2/postviews/${id}`)
+      const postViews = await this.$axios.$get(`https://admin.uzdsmi-nf.uz/wp-json/wp/v2/getpostviews/${id}`)
       this.pageViews = postViews
     }
   },
