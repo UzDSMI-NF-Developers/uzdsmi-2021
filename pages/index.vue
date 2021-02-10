@@ -26,10 +26,10 @@ const POSTS_URL = `https://admin.uzdsmi-nf.uz/wp-json/wp/v2/posts`
 
 export default {
   async asyncData({ $axios }) {
-    const news = await $axios.$get(`${POSTS_URL}?categories=2&_embed&per_page=8`)
-    const announcements = await $axios.$get(`${POSTS_URL}?categories=3&_embed&per_page=8`)
-    const articles = await $axios.$get(`${POSTS_URL}?categories=4&_embed&per_page=8`)
-    const conferences = await $axios.$get(`${POSTS_URL}?categories=5&_embed&per_page=3`)
+    const news = await $axios.$get(`${POSTS_URL}?categories=2&_embed`)
+    const announcements = await $axios.$get(`${POSTS_URL}?categories=3&_embed`)
+    const articles = await $axios.$get(`${POSTS_URL}?categories=4&_embed`)
+    const conferences = await $axios.$get(`${POSTS_URL}?categories=5&_embed`)
 
     return {
       news,
