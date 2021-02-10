@@ -282,10 +282,10 @@
             <NavLink :to="localePath('/page/840956')">
               {{ $t('nav.normative_legal_documents.presidential_decrees_and_resolutions') }}
             </NavLink>
-            <NavLink :to="localePath('/page/585703')">
+            <NavLink :to="localePath('/page/651125')">
               {{ $t('nav.normative_legal_documents.government_decisions_and_programs') }}
             </NavLink>
-            <NavLink :to="localePath('/page/651125')">
+            <NavLink :to="localePath('/page/585703')">
               {{ $t('nav.normative_legal_documents.normative_legal_and_executive_documents') }}
             </NavLink>
           </NavDropdown>
