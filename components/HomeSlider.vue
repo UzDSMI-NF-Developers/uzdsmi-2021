@@ -55,6 +55,22 @@
         <swiper-slide>
           <div
             class="bg-cover bg-center h-auto text-white py-20 px-12 md:py-40 md:px-16 object-fill"
+            style="background-image: url(/slider/hemis.jpg)"
+          >
+            <h3 class="text-2xl md:text-3xl lg:text-4xl mb-5">O'zbekiston davlat san'at va madaniyat instituti Nukus filiali HEMIS Talaba (Student) axborot tizimi</h3>
+            <a
+              href="http://student.uzdsmi-nf.uz/"
+              class="bg-blue-700 text-white no-underline px-4 py-2 font-semibold rounded hover:bg-blue-500 hover:text-white hover:no-underline"
+              target="_blank"
+              rel="nofollow noopener"
+            >
+              {{ $t('links.read_more') }}
+            </a>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div
+            class="bg-cover bg-center h-auto text-white py-20 px-12 md:py-40 md:px-16 object-fill"
             style="background-image: url(/slider/ariza.jpg)"
           >
             <h3 class="text-2xl md:text-3xl lg:text-4xl mb-5">
