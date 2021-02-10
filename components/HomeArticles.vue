@@ -14,7 +14,7 @@
             <ArticlesCard
               :id="post.id"
               :title="post.title.rendered"
-              :imageUrl="post._embedded['wp:featuredmedia']['0'].source_url"
+              :imageUrl="post._embedded['wp:featuredmedia'][0].source_url"
               :date="post.date"
             />
           </NuxtLink>
