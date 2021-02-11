@@ -2,6 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  generate: {
+    crawler: false
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "O'zbekiston davlat san'at va madaniyat instituti Nukus filiali | uzdsmi-nf.uz",
