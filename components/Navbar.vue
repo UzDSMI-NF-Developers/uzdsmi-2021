@@ -237,12 +237,9 @@
             <NavLink :to="localePath('/page/372741')">
               {{ $t('nav.students.instructions') }}
             </NavLink>
-            <NavDropdown :title="$t('nav.students.gifted_students')">
-              <NavLink :to="localePath('/page/586452')">I - Course</NavLink>
-              <NavLink :to="localePath('/page/558200')">II - Course</NavLink>
-              <NavLink :to="localePath('/page/888440')">III - Course</NavLink>
-              <NavLink :to="localePath('/page/211719')">IV - Course</NavLink>
-            </NavDropdown>
+            <NavLink :to="localePath('/page/586452')">
+              {{ $t('nav.students.gifted_students') }}
+            </NavLink>
             <NavLink :to="localePath('/page/967744')">
               {{ $t('nav.students.class_schedul') }}
             </NavLink>
