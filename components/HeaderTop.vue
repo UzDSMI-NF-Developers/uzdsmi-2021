@@ -3,32 +3,32 @@
     <div class="py-1 md:py-0">
       <ul class="flex items-center">
         <li>
-          <NuxtLink :to="localePath('/page/278475')">
+          <NuxtLink :to="localePath('/page/1555')">
             <img src="/flag-uzb.png" alt="" />
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('/page/900488')">
+          <NuxtLink :to="localePath('/page/1560')">
             <img src="/Emblem_of_Uzbekistan.svg" alt="" />
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('/page/340569')">
+          <NuxtLink :to="localePath('/page/1565')">
             <img src="/note.png" alt="" />
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('/page/278475')">
+          <NuxtLink :to="localePath('/page/1575')">
             <img src="/flag-qq.png" alt="" />
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('/page/226084')">
+          <NuxtLink :to="localePath('/page/1581')">
             <img src="/Emblem_of_Karakalpakstan.svg" alt="" />
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('/page/821363')">
+          <NuxtLink :to="localePath('/page/1586')">
             <img src="/note.png" alt="" />
           </NuxtLink>
         </li>
