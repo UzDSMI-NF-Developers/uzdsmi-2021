@@ -68,7 +68,7 @@
               <NuxtLink
                 :to="
                   localePath(
-                    '/page/402706',
+                    '/page/1546',
                   )
                 "
               >
