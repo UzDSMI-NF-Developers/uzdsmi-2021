@@ -257,13 +257,13 @@
 
           <!-- Interactive services -->
           <NavDropdown :title="$t('nav.interactive_services.title')">
-            <NavLink :to="localePath('/page/153098')">
+            <a href="https://ariza.uzdsmi-nf.uz/">
               {{ $t('nav.interactive_services.electronic_acceptance_of_applicants_applications') }}
-            </NavLink>
-            <NavLink :to="localePath('/page/545018')">
+            </a>
+            <NavLink :to="localePath('/student-information')">
               {{ $t('nav.interactive_services.get_a_student_certificate') }}
             </NavLink>
-            <NavLink :to="localePath('/page/602808')">
+            <NavLink :to="localePath('/diploma-confirmation')">
               {{ $t('nav.interactive_services.higher_education_diploma_confirmation') }}
             </NavLink>
             <NavLink :to="localePath('/page/402706')">
@@ -271,6 +271,23 @@
                 $t('nav.interactive_services.possibility_to_get_an_electronic_copy_of_the_diploma')
               }}
             </NavLink>
+            <NavLink :to="localePath('/')">
+              {{
+                $t('nav.interactive_services.electronic_submission_of_articles_to_conferences_and_scientific_journals')
+              }}
+            </NavLink>
+            <NavLink :to="localePath('/announcements/449')">
+              {{ $t('nav.interactive_services.vacancies') }}
+            </NavLink>
+            <NavLink :to="localePath('/online-reception')">
+              {{ $t('nav.interactive_services.sign_up_for_a_leaders_appointment') }}
+            </NavLink>
+            <NavLink :to="localePath('/check-contract')">
+              {{ $t('nav.interactive_services.determining_the_amount_of_payment_contract') }}
+            </NavLink>
+            <a href="https://ariza.uzdsmi-nf.uz">
+              {{ $t('nav.interactive_services.stratified_payment_contract') }}
+            </a>
           </NavDropdown>
           <!-- Interactive services END -->
 
@@ -313,3 +330,21 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+  a {
+    @apply block px-4 py-2 mt-2 font-semibold text-sm text-black rounded;
+
+    @screen md {
+      @apply mt-0;
+    }
+  }
+
+  a:hover {
+    @apply bg-blue-500 text-white no-underline;
+  }
+
+  a:focus {
+    @apply outline-none shadow-md;
+  }
+</style>
