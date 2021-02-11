@@ -1,10 +1,10 @@
 <template>
   <div class="py-10">
-    <Heading :title="post.title" />
+    <Heading :title="post.title.rendered" />
     <div
       class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl dark:text-gray-300 nuxt-content max-w-3xl mx-auto mt-10"
     >
-      <nuxt-content :document="post" />
+      <div v-html="post.content.rendered"></div>
     </div>
   </div>
 </template>
@@ -13,26 +13,33 @@
 import Heading from '@/components/Heading'
 
 export default {
-  async asyncData({ $content, params, app }) {
+  async asyncData({ $axios, params, app }) {
     const { id } = params
     const { locale } = app.i18n
-    const post = await $content(`${locale}/page`, id).fetch()
+    let currentLocale = ''
+
+    if (locale === 'uz') {
+      currentLocale = ''
+    } else {
+      currentLocale = locale
+    }
+
+    const post = await $axios.$get(`https://admin.uzdsmi-nf.uz/${currentLocale}/wp-json/wp/v2/posts/${id}`)
 
     return {
-      post,
-      locale
+      post
     }
   },
   head() {
-    const { title, description } = this.post
+    const { title, excerpt } = this.post
     return {
-      title: title,
+      title: title.rendered,
       titleTemplate: `%s | uzdsmi-nf.uz`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: description
+          content: excerpt.rendered
         }
       ]
     }

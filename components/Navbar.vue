@@ -30,88 +30,88 @@
         >
           <!-- Branch -->
           <NavDropdown :title="$t('nav.branch.title')">
-            <NavLink :to="localePath('/page/812443')">
+            <NavLink :to="localePath('/page/518')">
               {{ $t('nav.branch.charter') }}
             </NavLink>
-            <NavLink :to="localePath('/page/346504')">
+            <NavLink :to="localePath('/page/520')">
               {{ $t('nav.branch.history') }}
             </NavLink>
-            <NavLink :to="localePath('/page/153031')">
+            <NavLink :to="localePath('/page/1155')">
               {{ $t('nav.branch.structure') }}
             </NavLink>
-            <NavLink :to="localePath('/page/523539')">
+            <NavLink :to="localePath('/page/527')">
               {{ $t('nav.branch.administration') }}
             </NavLink>
             <NavDropdown :title="$t('nav.branch.faculties.title')">
-              <NavLink :to="localePath('/page/488834')">
+              <NavLink :to="localePath('/page/531')">
                 {{ $t('nav.branch.faculties.directing_and_acting_skills') }}
               </NavLink>
-              <NavLink :to="localePath('/page/430337')">
+              <NavLink :to="localePath('/page/551')">
                 {{ $t('nav.branch.faculties.social_and_humanities_sciences') }}
               </NavLink>
-              <NavLink :to="localePath('/page/936103')">
+              <NavLink :to="localePath('/page/566')">
                 {{ $t('nav.branch.faculties.texnogen') }}
               </NavLink>
-              <NavLink :to="localePath('/page/336080')">
+              <NavLink :to="localePath('/page/571')">
                 {{ $t('nav.branch.faculties.folk_art_culture') }}
               </NavLink>
-              <NavLink :to="localePath('/page/798097')">
+              <NavLink :to="localePath('/page/1298')">
                 {{ $t('nav.branch.faculties.culture_and_library_activities') }}
               </NavLink>
             </NavDropdown>
             <NavDropdown :title="$t('nav.branch.center_and_divisions.title')">
-              <NavLink :to="localePath('/page/256927')">
+              <NavLink :to="localePath('/page/1304')">
                 {{ $t('nav.branch.center_and_divisions.center_of_information_resource') }}
               </NavLink>
-              <NavLink :to="localePath('/page/934080')">
+              <NavLink :to="localePath('/page/1309')">
                 {{ $t('nav.branch.center_and_divisions.center_of_information_technologies') }}
               </NavLink>
-              <NavLink :to="localePath('/page/929733')">
+              <NavLink :to="localePath('/page/1315')">
                 {{ $t('nav.branch.center_and_divisions.department_of_international_relations') }}
               </NavLink>
-              <NavLink :to="localePath('/page/836289')">
+              <NavLink :to="localePath('/page/1322')">
                 {{
                   $t('nav.branch.center_and_divisions.department_of_monitoring_and_internal_control')
                 }}
               </NavLink>
-              <NavLink :to="localePath('/page/116020')">
+              <NavLink :to="localePath('/page/1328')">
                 {{ $t('nav.branch.center_and_divisions.department_of_quality') }}
               </NavLink>
-              <NavLink :to="localePath('/page/943926')">
+              <NavLink :to="localePath('/page/1333')">
                 {{ $t('nav.branch.center_and_divisions.department_of_youth') }}
               </NavLink>
-              <NavLink :to="localePath('/page/359037')">
+              <NavLink :to="localePath('/page/1339')">
                 {{ $t('nav.branch.center_and_divisions.educational_and_methodical_activities') }}
               </NavLink>
-              <NavLink :to="localePath('/page/115490')">
+              <NavLink :to="localePath('/page/1344')">
                 {{ $t('nav.branch.center_and_divisions.hr') }}
               </NavLink>
-              <NavLink :to="localePath('/page/105754')">
+              <NavLink :to="localePath('/page/1349')">
                 {{ $t('nav.branch.center_and_divisions.legal_counsel') }}
               </NavLink>
-              <NavLink :to="localePath('/page/159394')">
+              <NavLink :to="localePath('/page/1353')">
                 {{ $t('nav.branch.center_and_divisions.marketing') }}
               </NavLink>
-              <NavLink :to="localePath('/page/988973')">
+              <NavLink :to="localePath('/page/1358')">
                 {{ $t('nav.branch.center_and_divisions.office_department') }}
               </NavLink>
-              <NavLink :to="localePath('/page/533688')">
+              <NavLink :to="localePath('/page/1362')">
                 {{ $t('nav.branch.center_and_divisions.press_secretary') }}
               </NavLink>
-              <NavLink :to="localePath('/page/347792')">
+              <NavLink :to="localePath('/page/1367')">
                 {{ $t('nav.branch.center_and_divisions.scientific_department') }}
               </NavLink>
-              <NavLink :to="localePath('/page/102266')">
+              <NavLink :to="localePath('/page/1371')">
                 {{ $t('nav.branch.center_and_divisions.scientific_innovative') }}
               </NavLink>
-              <NavLink :to="localePath('/page/405277')">
+              <NavLink :to="localePath('/page/1375')">
                 {{ $t('nav.branch.center_and_divisions.trade_union') }}
               </NavLink>
-              <NavLink :to="localePath('/page/840155')">
+              <NavLink :to="localePath('/page/1379')">
                 {{ $t('nav.branch.center_and_divisions.womens_committee') }}
               </NavLink>
             </NavDropdown>
-            <NavLink :to="localePath('/page/971608')">
+            <NavLink :to="localePath('/page/576')">
               {{ $t('nav.branch.vacancies') }}
             </NavLink>
           </NavDropdown>
@@ -120,30 +120,30 @@
           <!-- Activity -->
           <NavDropdown :title="$t('nav.activity.title')">
             <NavDropdown :title="$t('nav.activity.financial_activity')">
-              <NavLink :to="localePath('/page/407020')">
+              <NavLink :to="localePath('/page/1188')">
                 {{ $t('nav.activity.alumni_monitoring') }}
               </NavLink>
-              <NavLink :to="localePath('/page/649331')">
+              <NavLink :to="localePath('/page/1191')">
                 {{ $t('nav.activity.job_placement') }}
               </NavLink>
-              <NavLink :to="localePath('/page/617826')">
+              <NavLink :to="localePath('/page/1195')">
                 {{ $t('nav.activity.marketing') }}
               </NavLink>
-              <NavLink :to="localePath('/page/826537')">
+              <NavLink :to="localePath('/page/1198')">
                 {{ $t('nav.activity.sample_of_contracts') }}
               </NavLink>
             </NavDropdown>
             <NavDropdown :title="$t('nav.activity.culture_and_educational_activities')">
-              <NavLink :to="localePath('/page/941297')">
+              <NavLink :to="localePath('/page/1202')">
                 {{ $t('nav.activity.culture_and_educational_activities') }}
               </NavLink>
-              <NavLink :to="localePath('/page/124933')">
+              <NavLink :to="localePath('/page/1205')">
                 {{ $t('nav.activity.sports_events') }}
               </NavLink>
-              <NavLink :to="localePath('/page/891032')">
+              <NavLink :to="localePath('/page/1208')">
                 {{ $t('nav.activity.student_life') }}
               </NavLink>
-              <NavLink :to="localePath('/page/867706')">
+              <NavLink :to="localePath('/page/1211')">
                 {{ $t('nav.activity.youth_union') }}
               </NavLink>
             </NavDropdown>
@@ -152,81 +152,81 @@
 
           <!-- Applicants -->
           <NavDropdown :title="$t('nav.applicants.title')">
-            <NavLink :to="localePath('/page/373495')">
+            <NavLink :to="localePath('/page/1389')">
               {{ $t('nav.applicants.be_aware') }}
             </NavLink>
-            <NavLink :to="localePath('/page/769451')">
+            <NavLink :to="localePath('/page/1393')">
               {{ $t('nav.applicants.notes_of_applicants') }}
             </NavLink>
-            <NavLink :to="localePath('/page/429298')">
+            <NavLink :to="localePath('/page/1397')">
               {{ $t('nav.applicants.privileges') }}
             </NavLink>
-            <NavLink :to="localePath('/page/283992')">
+            <NavLink :to="localePath('/page/1403')">
               {{ $t('nav.applicants.admission_quota') }}
             </NavLink>
-            <NavLink :to="localePath('/page/186839')">
+            <NavLink :to="localePath('/page/1408')">
               {{ $t('nav.applicants.admission_to_distance_learning') }}
             </NavLink>
-            <NavLink :to="localePath('/page/621187')">
+            <NavLink :to="localePath('/page/1412')">
               {{ $t('nav.applicants.foreign_applicants') }}
             </NavLink>
-            <NavLink :to="localePath('/page/212620')">
+            <NavLink :to="localePath('/page/1416')">
               {{ $t('nav.applicants.admission_commission') }}
             </NavLink>
-            <NavLink :to="localePath('/page/314798')">
+            <NavLink :to="localePath('/page/1420')">
               {{ $t('nav.applicants.admission_monitoring') }}
             </NavLink>
-            <NavLink :to="localePath('/page/823269')">
+            <NavLink :to="localePath('/page/1424')">
               {{ $t('nav.applicants.package_of_documents') }}
             </NavLink>
-            <NavLink :to="localePath('/page/530228')">
+            <NavLink :to="localePath('/page/1428')">
               {{ $t('nav.applicants.list_of_exam_subjects') }}
             </NavLink>
-            <NavLink :to="localePath('/page/129368')">
+            <NavLink :to="localePath('/page/1433')">
               {{ $t('nav.applicants.creative_exam_requirements') }}
             </NavLink>
             <NavDropdown :title="$t('nav.applicants.test_exam_results')">
-              <NavLink :to="localePath('/page/286054')">
+              <NavLink :to="localePath('/page/1443')">
                 5350600 - Kutubxona-axborot faoliyati (Faoliyat turlari bo’yicha) – Kunduzgi
               </NavLink>
-              <NavLink :to="localePath('/page/751156')">
+              <NavLink :to="localePath('/page/1451')">
                 5350600 - Kutubxona-axborot faoliyati (Faoliyat turlari bo’yicha) – Sirtqi
               </NavLink>
-              <NavLink :to="localePath('/page/459476')">
+              <NavLink :to="localePath('/page/1458')">
                 5151700 – Madaniyat va san’at muassasalarini tashkil etish hamda boshqarish – Kunduzgi
               </NavLink>
-              <NavLink :to="localePath('/page/517909')">
+              <NavLink :to="localePath('/page/1464')">
                 5151700 – Madaniyat va san’at muassasalarini tashkil etish hamda boshqarish – Sirtqi
               </NavLink>
-              <NavLink :to="localePath('/page/339876')">Imtiyoz</NavLink>
+              <NavLink :to="localePath('/page/1469')">Imtiyoz</NavLink>
             </NavDropdown>
             <NavDropdown :title="$t('nav.applicants.creative_exam_results')">
-              <NavLink :to="localePath('/page/612413')">
+              <NavLink :to="localePath('/page/1474')">
                 5111011 – Professional ta’limi (5151600 Xalq ijodiyoti Vokal ijrochiligi) – Kunduzgi
               </NavLink>
-              <NavLink :to="localePath('/page/350640')">
+              <NavLink :to="localePath('/page/1480')">
                 5150207 – San’atshunoslik (Saxna va ekran san’ati dramaturgiyasi) – Kunduzgi
               </NavLink>
-              <NavLink :to="localePath('/page/349397')">
+              <NavLink :to="localePath('/page/1485')">
                 5150207 – San’atshunoslik (Saxna va ekran san’ati dramaturgiyasi) – Sirtqi
               </NavLink>
-              <NavLink :to="localePath('/page/962800')">
+              <NavLink :to="localePath('/page/1490')">
                 5150302 – Aktyorlik san’ati (Musiqali teatr aktorligi) – Kunduzgi
               </NavLink>
-              <NavLink :to="localePath('/page/386690')">
+              <NavLink :to="localePath('/page/1498')">
                 5150400 – Rejissyorlik (Musiqiy teatr rejissyorligi) – Kunduzgi
               </NavLink>
-              <NavLink :to="localePath('/page/630708')">
+              <NavLink :to="localePath('/page/1504')">
                 5151400 – Texnogen san’ati (Kino, televideniye va radio ovoz rejissyorligi) – Kunduzgi
               </NavLink>
-              <NavLink :to="localePath('/page/890665')">
+              <NavLink :to="localePath('/page/1511')">
                 5151500 – Kino-teleoperatorlik – Kunduzgi
               </NavLink>
-              <NavLink :to="localePath('/page/418883')">
+              <NavLink :to="localePath('/page/1517')">
                 5151600 – Xalq ijodiyoti (Ashula va raqs) – Kunduzgi
               </NavLink>
             </NavDropdown>
-            <NavLink :to="localePath('/page/386187')">
+            <NavLink :to="localePath('/page/1437')">
               {{ $t('nav.applicants.statistics_of_passing_points') }}
             </NavLink>
           </NavDropdown>
@@ -234,22 +234,22 @@
 
           <!-- Students -->
           <NavDropdown :title="$t('nav.students.title')">
-            <NavLink :to="localePath('/page/372741')">
+            <NavLink :to="localePath('/page/761')">
               {{ $t('nav.students.instructions') }}
             </NavLink>
-            <NavLink :to="localePath('/page/586452')">
+            <NavLink :to="localePath('/page/1523')">
               {{ $t('nav.students.gifted_students') }}
             </NavLink>
-            <NavLink :to="localePath('/page/967744')">
+            <NavLink :to="localePath('/page/1529')">
               {{ $t('nav.students.class_schedul') }}
             </NavLink>
-            <NavLink :to="localePath('/page/501643')">
+            <NavLink :to="localePath('/page/1533')">
               {{ $t('nav.students.mastering') }}
             </NavLink>
-            <NavLink :to="localePath('/page/898111')">
+            <NavLink :to="localePath('/page/1537')">
               {{ $t('nav.students.attendance') }}
             </NavLink>
-            <NavLink :to="localePath('/page/865637')">
+            <NavLink :to="localePath('/page/1541')">
               {{ $t('nav.students.protection_of_graduation_qualification_work') }}
             </NavLink>
           </NavDropdown>
@@ -266,7 +266,7 @@
             <NavLink :to="localePath('/diploma-confirmation')">
               {{ $t('nav.interactive_services.higher_education_diploma_confirmation') }}
             </NavLink>
-            <NavLink :to="localePath('/page/402706')">
+            <NavLink :to="localePath('/page/1546')">
               {{
                 $t('nav.interactive_services.possibility_to_get_an_electronic_copy_of_the_diploma')
               }}
@@ -293,13 +293,13 @@
 
           <!-- Normative-Legal documents -->
           <NavDropdown :title="$t('nav.normative_legal_documents.title')">
-            <NavLink :to="localePath('/page/840956')">
+            <NavLink :to="localePath('/page/721')">
               {{ $t('nav.normative_legal_documents.presidential_decrees_and_resolutions') }}
             </NavLink>
-            <NavLink :to="localePath('/page/651125')">
+            <NavLink :to="localePath('/page/736')">
               {{ $t('nav.normative_legal_documents.government_decisions_and_programs') }}
             </NavLink>
-            <NavLink :to="localePath('/page/585703')">
+            <NavLink :to="localePath('/page/727')">
               {{ $t('nav.normative_legal_documents.normative_legal_and_executive_documents') }}
             </NavLink>
           </NavDropdown>
