@@ -9,9 +9,10 @@
     />
     <div class="flex-grow sm:pl-8">
       <h2
-        v-html="title"
         class="font-semibold title-font font-medium text-lg"
-      ></h2>
+      >
+        <NuxtLink :to="localePath('/articles/' + id)" v-html="title"></NuxtLink>
+      </h2>
       <p class="text-gray-600 dark:text-gray-200 text-sm font-semibold mb-3">
         {{ $dateFns.format(date, 'eeee, d MMMM, y', { locale }) }}
       </p>
