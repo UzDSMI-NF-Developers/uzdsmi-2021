@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-4 px-2 flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-gray-700 to-gray-900"
+    class="p-2 flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-gray-700 to-gray-900"
   >
     <div class="py-1 md:py-0">
       <ul class="flex items-center">
@@ -129,7 +129,7 @@
           >
         </li>
         <li
-          class="group bg-gray-200 py-2 px-4 border-r-2 border-l-2 flex items-center"
+          class="group bg-gray-200 py-2 px-4 flex items-center"
         >
           <svg
             class="group-hover:text-blue-700 w-6 mr-1"
@@ -153,7 +153,7 @@
           </NuxtLink>
         </li>
         <li
-          class="group bg-gray-200 py-2 px-4 border-r-2 border-l-2 flex items-center"
+          class="group bg-gray-200 py-2 px-4 rounded-r flex items-center"
         >
           <svg
             class="group-hover:text-blue-700 w-6 mr-1"
@@ -174,28 +174,6 @@
             class="group-hover:text-blue-700 text-black font-semibold text-xs hover:no-underline"
           >
             Elektron kutubxona
-          </NuxtLink>
-        </li>
-        <li class="group bg-gray-200 py-2 px-4 rounded-r flex items-center">
-          <svg
-            class="group-hover:text-blue-700 w-6 mr-1"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-            />
-          </svg>
-          <NuxtLink
-            :to="localePath('/')"
-            class="group-hover:text-blue-700 text-black font-semibold text-xs hover:no-underline"
-          >
-            Online kameralar
           </NuxtLink>
         </li>
       </ul>
